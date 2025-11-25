@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Italian Food – L'Esperienza Fluida</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.7;
+            background: #fcfcfc;
+            padding: 20px;
+            color: #333;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px 0 30px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #555;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        nav a:hover {
+            color: #c75000;
+        }
+
+        h1 {
+            font-family: "Times New Roman", serif;
+            font-style: italic;
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        h2 {
+            margin-top: 40px;
+            font-family: "Times New Roman", serif;
+            border-bottom: 2px solid #c75000;
+            padding-bottom: 8px;
+        }
+
+        .card {
+            background: #fff;
+            border: 1px solid #eee;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #888;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container">
+
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="places.html">Places</a>
+            <a href="culture.html">Culture</a>
+        </nav>
+    </header>
+
+    <h1>Italian Food</h1>
+    <p style="text-align:center;">A simple look at the flavors of Italy.</p>
+
+    <h2>Northern Italy</h2>
+    <div class="card">
+        <p><strong>• Risotto</strong> – Creamy rice dishes cooked with broth.</p>
+        <p><strong>• Polenta</strong> – Cornmeal served soft or grilled.</p>
+        <p><strong>• Speck</strong> – Smoked ham from the Alps.</p>
+    </div>
+
+    <h2>Central Italy</h2>
+    <div class="card">
+        <p><strong>• Fresh Egg Pasta</strong> – Tagliatelle, pappardelle, lasagna.</p>
+        <p><strong>• Pecorino Cheese</strong> – A salty sheep cheese.</p>
+        <p><strong>• Bistecca Fiorentina</strong> – Famous Tuscan steak.</p>
+    </div>
+
+    <h2>Southern Italy</h2>
+    <div class="card">
+        <p><strong>• Pizza</strong> – Especially the Neapolitan style.</p>
+        <p><strong>• Seafood</strong> – Octopus, sardines, calamari.</p>
+        <p><strong>• Citrus Fruits</strong> – Lemons from the Amalfi Coast.</p>
+    </div>
+
+    <footer>
+        <p>© <span id="year"></span> L'Esperienza Fluida</p>
+    </footer>
+</div>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
