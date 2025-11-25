@@ -52,25 +52,27 @@
 </footer>
 
 <script>
-    document.addEventListener("DOMContentLoaded", () => {
-        document.getElementById("copyright").textContent =
-            `© ${new Date().getFullYear()} L'Esperienza Fluida`;
-    });
-    document.querySelectorAll('a[href^="#"]').forEach(link => {
-        link.addEventListener("click", e => {
-            e.preventDefault();
-            const target = document.querySelector(link.getAttribute("href"));
-            if (!target) return;
+document.addEventListener("DOMContentLoaded", () => {
+    document.getElementById("copyright").textContent =
+        `© ${new Date().getFullYear()} L'Esperienza Fluida`;
+});
 
-            window.scrollTo({
-                top: target.offsetTop - 80, 
-                behavior: "smooth"
-            });
+const scroller = document.querySelector("main");
+
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener("click", e => {
+        e.preventDefault();
+        const target = document.querySelector(link.getAttribute("href"));
+        if (!target) return;
+
+        scroller.scrollTo({
+            top: target.offsetTop - 80,
+            behavior: "smooth"
         });
     });
+});
 </script>
 
-</script>
 
 </body>
 </html>
