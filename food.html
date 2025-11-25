@@ -5,9 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Italian Food – L'Esperienza Fluida</title>
 
+    <!-- Google Fonts (clean modern pair) -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: Arial, sans-serif;
+            font-family: Inter, Arial, sans-serif;
             line-height: 1.7;
             background: #fcfcfc;
             padding: 20px;
@@ -19,6 +28,7 @@
             margin: auto;
         }
 
+        /* HEADER */
         header {
             text-align: center;
             padding: 20px 0 30px;
@@ -30,42 +40,86 @@
             color: #555;
             font-weight: 600;
             text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: .3s;
         }
 
         nav a:hover {
             color: #c75000;
         }
 
+        /* TITLES */
         h1 {
-            font-family: "Times New Roman", serif;
-            font-style: italic;
-            font-size: 2.5em;
-            margin-bottom: 15px;
+            font-family: "Playfair Display", serif;
+            font-size: 2.8em;
+            margin-bottom: 12px;
             text-align: center;
+            color: #222;
+            font-style: italic;
         }
 
         h2 {
             margin-top: 40px;
-            font-family: "Times New Roman", serif;
+            font-family: "Playfair Display", serif;
             border-bottom: 2px solid #c75000;
             padding-bottom: 8px;
+            font-size: 1.7em;
+            color: #222;
         }
 
+        /* CARDS */
         .card {
             background: #fff;
             border: 1px solid #eee;
             padding: 20px;
-            margin-top: 20px;
-            border-radius: 6px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            margin-top: 18px;
+            border-radius: 10px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.06);
+            transition: .2s;
         }
 
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+        }
+
+        .card p {
+            margin-bottom: 10px;
+            font-size: 1.05em;
+        }
+
+        strong {
+            color: #c75000;
+            font-weight: 600;
+        }
+
+        /* FOOTER */
         footer {
             text-align: center;
-            margin-top: 40px;
+            margin-top: 50px;
             color: #888;
             padding-top: 20px;
             border-top: 1px solid #eee;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2.2em;
+            }
+
+            h2 {
+                font-size: 1.4em;
+            }
+
+            nav a {
+                margin: 0 8px;
+                font-size: 0.85em;
+            }
+
+            .card {
+                padding: 16px;
+            }
         }
     </style>
 </head>
@@ -82,27 +136,29 @@
     </header>
 
     <h1>Italian Food</h1>
-    <p style="text-align:center;">A simple look at the flavors of Italy.</p>
+    <p style="text-align:center; font-size:1.1em; margin-bottom:20px;">
+        A simple look at the flavors of Italy.
+    </p>
 
     <h2>Northern Italy</h2>
     <div class="card">
-        <p><strong>• Risotto</strong> – Creamy rice dishes cooked with broth.</p>
-        <p><strong>• Polenta</strong> – Cornmeal served soft or grilled.</p>
-        <p><strong>• Speck</strong> – Smoked ham from the Alps.</p>
+        <p><strong>Risotto</strong> – Creamy rice cooked slowly with broth.</p>
+        <p><strong>Polenta</strong> – Soft or grilled cornmeal.</p>
+        <p><strong>Speck</strong> – Lightly smoked Alpine ham.</p>
     </div>
 
     <h2>Central Italy</h2>
     <div class="card">
-        <p><strong>• Fresh Egg Pasta</strong> – Tagliatelle, pappardelle, lasagna.</p>
-        <p><strong>• Pecorino Cheese</strong> – A salty sheep cheese.</p>
-        <p><strong>• Bistecca Fiorentina</strong> – Famous Tuscan steak.</p>
+        <p><strong>Fresh Egg Pasta</strong> – Tagliatelle, pappardelle, lasagna.</p>
+        <p><strong>Pecorino Cheese</strong> – Salty sheep milk cheese.</p>
+        <p><strong>Bistecca Fiorentina</strong> – Tuscan-style steak.</p>
     </div>
 
     <h2>Southern Italy</h2>
     <div class="card">
-        <p><strong>• Pizza</strong> – Especially the Neapolitan style.</p>
-        <p><strong>• Seafood</strong> – Octopus, sardines, calamari.</p>
-        <p><strong>• Citrus Fruits</strong> – Lemons from the Amalfi Coast.</p>
+        <p><strong>Pizza</strong> – Especially the Neapolitan classic.</p>
+        <p><strong>Seafood</strong> – Octopus, sardines, calamari.</p>
+        <p><strong>Citrus Fruits</strong> – Lemons from the Amalfi Coast.</p>
     </div>
 
     <footer>
@@ -113,5 +169,6 @@
 <script>
 document.getElementById("year").textContent = new Date().getFullYear();
 </script>
+
 </body>
 </html>
