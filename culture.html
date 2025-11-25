@@ -1,11 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
+    <meta charset="UTF-8">
+    <meta-name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Culture – L'Esperienza Fluida</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles2.css">
 </head>
+
 <body>
-   
+<div class="container">
+
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="food.html">Food</a>
+            <a href="places.html">Places</a>
+        </nav>
+    </header>
+
+    <h1>Culture</h1>
+    <p style="text-align:center; font-size:1.1em; margin-bottom:20px;">
+        A calm look at Italian traditions, art, and everyday life.
+    </p>
+
+    <h2>Traditions</h2>
+    <div class="card">
+        <p><strong>La Passeggiata</strong> — Evening stroll through town streets.</p>
+        <p><strong>Family Meals</strong> — Slow, social, often lasting hours.</p>
+        <p><strong>Festivals</strong> — From small village feasts to grand events.</p>
+    </div>
+
+    <h2>Art & Heritage</h2>
+    <div class="card">
+        <p><strong>Renaissance Art</strong> — Florence, Rome, and countless museums.</p>
+        <p><strong>Architecture</strong> — Cathedrals, piazzas, columns, frescoes.</p>
+        <p><strong>Opera</strong> — A proud tradition of music and storytelling.</p>
+    </div>
+
+    <h2>Daily Life</h2>
+    <div class="card">
+        <p><strong>Coffee Culture</strong> — Quick espresso, no rush in the moment.</p>
+        <p><strong>Markets</strong> — Fresh produce and lively conversation.</p>
+        <p><strong>Piazza Life</strong> — People gathering, sitting, talking.</p>
+    </div>
+
+    <footer>
+        <p>© <span id="year"></span> L'Esperienza Fluida</p>
+    </footer>
+
+</div>
+
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
 </body>
 </html>

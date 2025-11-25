@@ -1,11 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
+    <meta charset="UTF-8">
+    <meta-name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Places – L'Esperienza Fluida</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles2.css">
 </head>
+
 <body>
-   
+<div class="container">
+
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="food.html">Food</a>
+            <a href="culture.html">Culture</a>
+        </nav>
+    </header>
+
+    <h1>Places</h1>
+    <p style="text-align:center; font-size:1.1em; margin-bottom:20px;">
+        Calm and beautiful places across Italy.
+    </p>
+
+    <h2>Northern Italy</h2>
+    <div class="card">
+        <p><strong>Venice</strong> — Canals, gondolas, and serene bridges.</p>
+        <p><strong>Milan</strong> — Fashion capital with grand architecture.</p>
+        <p><strong>Lake Como</strong> — Mountains, water, and peaceful villas.</p>
+    </div>
+
+    <h2>Central Italy</h2>
+    <div class="card">
+        <p><strong>Florence</strong> — Renaissance art and charming streets.</p>
+        <p><strong>Rome</strong> — Ancient ruins and timeless culture.</p>
+        <p><strong>Siena</strong> — Warm medieval atmosphere.</p>
+    </div>
+
+    <h2>Southern Italy</h2>
+    <div class="card">
+        <p><strong>Amalfi Coast</strong> — Cliffs, beaches, lemon scent.</p>
+        <p><strong>Naples</strong> — Energy, history, and pizza.</p>
+        <p><strong>Sicily</strong> — Markets, coastline, and volcanic views.</p>
+    </div>
+
+    <footer>
+        <p>© <span id="year"></span> L'Esperienza Fluida</p>
+    </footer>
+
+</div>
+
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
 </body>
 </html>
